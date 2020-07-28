@@ -27,6 +27,7 @@ class App extends Component {
       dataType:'json',
       cache: false,
       success: function(data){
+        // store the data in the component state
         this.setState({resumeData: data});
       }.bind(this),
       error: function(xhr, status, err){
@@ -35,11 +36,15 @@ class App extends Component {
       }
     });
   }
-
+  
+  // a lifecycle method
   componentDidMount(){
     this.getResumeData();
   }
 
+  // state is used only if you are going to render content. 
+  // when setState is called, this triggers a re-render.
+  // if you want to just store regular content, use props.
   render() {
     return (
       <div className="App">
