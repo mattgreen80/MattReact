@@ -4,7 +4,7 @@
     "description":"SQL server | Web Infrastructure | Cloud + On Premise Infrastructure | C# ASP.NET Development",
     "image":"me.jpg",
     "bio":"I am primarily a network infrastructure specialist; I build and maintain networks for web hosting. However I'm also a full time Microsoft SQL server DBA and I work with ASP.NET applications on a daily basis. Some of the technologies I work with include IIS, MSSQL, RabbitMQ, Azure, AWS and Elastic Search. ",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "aboutsite":"This site is built with React and hosted in Azure. It's a work in progress and I plan to expand its functionality beyond just static content by writing a backend API.",
     "email": "mattgreenwell@live.com",
     "phone": "555-555-5555",
     "github":"https://github.com/mattgreen80",

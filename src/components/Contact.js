@@ -11,7 +11,6 @@ class Contact extends Component {
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
       var email = this.props.data.email;
-      var message = this.props.data.contactmessage;
     }
 
     return (
@@ -27,7 +26,7 @@ class Contact extends Component {
 
             <div className="ten columns">
 
-                  <p className="lead">{message}</p>
+                  <p className="lead">messageprophere</p>
 
             </div>
 

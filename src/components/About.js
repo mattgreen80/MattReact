@@ -7,6 +7,7 @@ class About extends Component {
       var name = this.props.data.name;
       var profilepic= "images/"+this.props.data.image;
       var bio = this.props.data.bio;
+      var site = this.props.data.aboutsite;
       var city = this.props.data.address.city;
       var country = this.props.data.address.country;
       var email = this.props.data.email;
@@ -23,6 +24,9 @@ class About extends Component {
             <h2>About Me</h2>
 
             <p>{bio}</p>
+            <h2>About This Site</h2>
+
+            <p>{site}</p>
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
