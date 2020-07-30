@@ -1,108 +1,84 @@
 {
   "main": {
     "name":"Matthew Greenwell",
-    "description":"SQL server | Web infrastructure | Cloud & on prem networking and hardware | C# ASP.NET Development",
+    "description":"SQL server | Web Infrastructure | Cloud + On Premise Infrastructure | C# ASP.NET Development",
     "image":"me.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"I am primarily a network infrastructure specialist; I build and maintain networks for web hosting. However I'm also a full time Microsoft SQL server DBA and I work with ASP.NET applications on a daily basis. Some of the technologies I work with include IIS, MSSQL, RabbitMQ, Azure, AWS and Elastic Search. ",
     "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
+    "email": "mattgreenwell@live.com",
     "phone": "555-555-5555",
-    "github":"https://github.com/nordicgiant2/react-nice-resume",
-    "project":"https://github.com/nordicgiant2/react-nice-resume",
+    "github":"https://github.com/mattgreen80",
+    "linkedin":"https://www.linkedin.com/in/matthew-greenwell-4219ab86/",
     "address":{
       "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "city":"Auckland",
+      "country":"New Zealand"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "",
+    "resumedownload":"http://www.greenwell.cc/resume.pdf",
     "social":[
       {
-        "name":"facebook",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/matthew-greenwell-4219ab86/",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
-      },
-      {
         "name":"github",
-        "url":"https://github.com/nordicgiant2/react-nice-resume",
+        "url":"https://github.com/mattgreen80",
         "className":"fa fa-github"
       }
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Auckland University",
+        "degree":"Bachelor of Arts (BA)",
+        "graduated":"2014",
+        "description":"Psychology Major, Philosophy Minor"
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Harvard University",
+        "degree":"Online Course - CS50: Introduction to Computer Science",
+        "graduated":"2018",
+        "description":"Harvard University's introduction to the intellectual enterprises of computer science and the art of programming."
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Solutionists LTD - Advanced Ecommerce",
+        "title":"System Administrator",
+        "years":"March 2018 - Present",
+        "description":"Systems administration, Developer support, Client advisory and support role."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Regional Facilities Auckland",
+        "title":"Risk Coordinator",
+        "years":"2014 - 2015",
+        "description":"Insurance claim management, insurance policy maintenance, risk management, and various Health and safety related work."
       }
     ],
     "skills":[
       {
-        "name":"Python",
-        "level":"60%"
+        "name":"C#",
+        "level":"65%"
       },
       {
-        "name":"VueJs",
-        "level":"55%"
+        "name":"SQL",
+        "level":"65%"
       },
       {
-        "name":"ReactJs",
+        "name":"Powershell",
         "level":"50%"
       },
       {
-        "name":"CSS",
+        "name":"Javascript",
+        "level":"20%"
+      },
+      {
+        "name":"Network Infrastructure",
         "level":"90%"
-      },
-      {
-        "name":"PHP",
-        "level":"80%"
-      },
-      {
-        "name":"Swift",
-        "level":"50%"
-      },
-      {
-        "name":"JAVA",
-        "level":"80%"
       }
     ]
   },

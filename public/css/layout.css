@@ -38,6 +38,19 @@ header {
    overflow: hidden;
 }
 
+header .button {
+   margin-top: 6px;
+   background: #444;
+}
+header .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+header .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
 /* vertically center banner section */
 header:before {
    content: '';
@@ -89,8 +102,8 @@ header .social li {
    margin: 0 15px;
    padding: 0;
 }
-header .social li a { color: #fff; }
-header .social li a:hover { color: #0762f9; }
+/*header .social li a { color: #fff; }
+header .social li a:hover { color: #0762f9; } */
 
 /* scrolldown link */
 header .scrolldown a {
@@ -112,7 +125,7 @@ header .scrolldown a {
    -o-transition: all .3s ease-in-out;
    transition: all .3s ease-in-out;
 }
-header .scrolldown a:hover { color: #0762f9; }
+header .scrolldown a:hover { color: #f90707; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
@@ -202,8 +215,8 @@ ul#nav li.current a { color: #fe6928; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   width: 191px;
+   height: 220px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -246,7 +259,7 @@ ul#nav li.current a { color: #fe6928; }
    letter-spacing: 1px;
 }
 #resume h1 span {
-   border-bottom: 3px solid #0762f9;
+   border-bottom: 3px solid #3a0013;
    padding-bottom: 6px;
 }
 #resume h3 {
@@ -1003,7 +1016,7 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #dd0000; }
 
 
 .social .btn:first-child{
@@ -1016,9 +1029,10 @@ footer .social-links li:first-child { margin-left: 0; }
 .social .btn i{
    margin-right: 15px;
 }
-.project-btn{
+
+/* .project-btn{
    background-color: #1abc9c !important;
 }
 .github-btn{
-   background-color: #34495e !important;
-}
+   background-color: #3a3a3a !important;
+} */
