@@ -1,47 +1,57 @@
 import React, { Component } from 'react';
 
 class Portfolio extends Component {
-  render() {
+  constructor(props) {
+    super(props);
+    this.state = { 
+      reqinfo: {},
+      kanye: {}
+     };
+  }
+  
+  componentDidMount() {
+    // get ip address info
+    fetch('https://json.geoiplookup.io/')
+    .then(response => response.json())
+    .then(data => {
+      this.setState({ reqinfo : data });
+    });
+  }
 
-    if (this.props.data) {
-      var projects = this.props.data.projects.map(function (projects) {
-        var projectImage = 'images/portfolio/' + projects.image;
-        
-        return (
-          <div key={projects.title} className="columns portfolio-item">
-            <div className="item-wrap">
-              <a href={projects.url} title={projects.title}>
-                <img alt={projects.title} src={projectImage} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>{projects.title}</h5>
-                    <p>{projects.category}</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-        )
-      })
+  getQuote() {
+    fetch('https://api.kanye.rest/')
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      this.setState({ kanye : data });
+    });
+  }
+
+  render() { 
+
+    let quoteText;
+    //if (Object.keys(this.state.kanye).length === 0 && this.state.kanye.constructor === Object)
+    if (Object.keys(this.state.kanye).length === 0)
+    {
+      quoteText = <p hidden>{this.state.kanye.quote}</p>
+    } else {
+      quoteText = <p>{this.state.kanye.quote}</p>
     }
 
-    return (
+    return ( 
       <section id="portfolio">
 
-        <div className="row">
+        <h1>Your Ip is:  {this.state.reqinfo.ip}</h1>
+        <h1>You are located in:  {this.state.reqinfo.city}, {this.state.reqinfo.country_name}</h1>
+        <h1>Your Internet Service Provider (ISP) is:  {this.state.reqinfo.isp}</h1>
 
-          <div className="twelve columns collapsed">
+        <button onClick={() => {this.getQuote();} } className="button"><i className="fa fa-download"></i>Click Me</button>
+        {quoteText}
 
-            <h1>Check Out Some of My Works.</h1>
-
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              {projects}
-            </div>
-          </div>
-        </div>
       </section>
-    );
+     );
   }
 }
-
+ 
 export default Portfolio;
+
