@@ -30,12 +30,13 @@ class Portfolio extends Component {
   render() { 
 
     let quoteText;
+    // check if there is a quote already so nothing displays unless you click it.
     //if (Object.keys(this.state.kanye).length === 0 && this.state.kanye.constructor === Object)
     if (Object.keys(this.state.kanye).length === 0)
     {
-      quoteText = <p hidden>{this.state.kanye.quote}</p>
+      quoteText = <h1 hidden>"{this.state.kanye.quote}"<i> - Kanye West</i></h1>
     } else {
-      quoteText = <p>{this.state.kanye.quote}</p>
+      quoteText = <h1>"{this.state.kanye.quote}"<i> - Kanye West</i></h1>
     }
 
     return ( 
@@ -45,7 +46,7 @@ class Portfolio extends Component {
         <h1>You are located in:  {this.state.reqinfo.city}, {this.state.reqinfo.country_name}</h1>
         <h1>Your Internet Service Provider (ISP) is:  {this.state.reqinfo.isp}</h1>
 
-        <button onClick={() => {this.getQuote();} } className="button"><i className="fa fa-download"></i>Click Me</button>
+        <img src="images/kanye-west1.png" Alt="Click Me" onClick={() => {this.getQuote();} } className="rotate-img"></img>
         {quoteText}
 
       </section>

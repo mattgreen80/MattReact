@@ -438,6 +438,15 @@ ul#nav li.current a { color: #fe6928; }
    color: #95A3A3;
 }
 
+#portfolio img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 48px;
+   width: 150px;
+   height: 150px;
+ }
+
 /* Portfolio Content */
 #portfolio-wrapper .columns { margin-bottom: 36px; }
 .portfolio-item .item-wrap {
@@ -1036,3 +1045,14 @@ footer .social-links li:first-child { margin-left: 0; }
 .github-btn{
    background-color: #3a3a3a !important;
 } */
+
+/* custom */
+
+.rotate-img {
+   border-radius: 50%;
+           transition: transform 0.8s ease-in-out;
+ }
+ 
+ .rotate-img:hover {
+           transform: scale(1.2);
+ }
